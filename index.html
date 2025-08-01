@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイプロフィール</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #FFFFFF; /* 背景色 */
+            color: #333333; /* テキスト色 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px 0;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .bio {
+            max-width: 600px;
+            margin: 0 20px 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .links {
+            max-width: 600px;
+            margin: 0 20px;
+            text-align: left;
+        }
+        .links p {
+            margin: 10px 0 20px 0; /* 空行効果 */
+            font-size: 16px;
+            word-break: break-all; /* 長いURLを折り返す */
+        }
+        .links a {
+            color: #007bff; /* 青リンク */
+            text-decoration: underline; /* 下線 */
+        }
+        .links a:hover {
+            color: #0056b3; /* ホバー時: 濃い青 */
+            text-decoration: underline;
+        }
+        /* スマートフォン向け調整 */
+        @media (max-width: 600px) {
+            .links p {
+                font-size: 14px; /* 小さいフォント */
+                word-break: break-all; /* 折り返し */
+                margin: 10px 0 20px 0; /* 空行効果 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="profile23.jpeg" alt="プロフィール画像" class="profile-img">
+    <div class="name">Makoto Tachibana</div>
+    <div class="bio">
+        I use ArtRage to record the drawing process and edit the process data called "arscript" to create artwork.
+    </div>
+    <div class="links">
+        <p>X: <a href="https://x.com/makosignage" target="_blank">https://x.com/makosignage</a></p>
+        <p>Bluesky: <a href="https://bsky.app/profile/makosignage.bsky.social" target="_blank">https://bsky.app/profile/makosignage.bsky.social</a></p>
+        <p>Mastodon: <a href="https://mastodon.social/@makosignage2" target="_blank">https://mastodon.social/@makosignage2</a></p>
+        <p>Tumblr: <a href="https://makosignage.tumblr.com/" target="_blank">https://makosignage.tumblr.com/</a></p>
+        <p>Behance: <a href="https://www.behance.net/makosignage" target="_blank">https://www.behance.net/makosignage</a></p>
+        <p>Pixiv: <a href="https://www.pixiv.net/users/118496764" target="_blank">https://www.pixiv.net/users/118496764</a></p>
+        <p>YouTube: <a href="https://www.youtube.com/@makosignage" target="_blank">https://www.youtube.com/@makosignage</a></p>
+        <p>Dailymotion: <a href="https://www.dailymotion.com/makosignage" target="_blank">https://www.dailymotion.com/makosignage</a></p>
+        <p>Giphy: <a href="https://giphy.com/channel/makosignage" target="_blank">https://giphy.com/channel/makosignage</a></p>
+    </div>
+</body>
+</html>
